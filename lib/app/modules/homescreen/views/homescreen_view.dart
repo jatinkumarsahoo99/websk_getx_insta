@@ -24,7 +24,8 @@ class HomescreenView extends StatelessWidget {
           builder: (controllerX) {
             return SafeArea(
               child: (controllerX.userDataList != null &&  (controllerX.userDataList?.bodyData?.length != null) &&
-                  (controllerX.userDataList?.bodyData?.length??0) > 0) ? Column(
+                  (controllerX.userDataList?.bodyData?.length??0) > 0) ?
+              Column(
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -36,11 +37,11 @@ class HomescreenView extends StatelessWidget {
                             .bold, fontSize: 23,),),
                         Row(
                           children: [
-                            Icon(Icons.heart_broken),
+                            Icon(Icons.favorite_border),
                             SizedBox(
                               width: 10,
                             ),
-                            Icon(Icons.chat)
+                            Icon(Icons.message_outlined)
                           ],
                         )
                       ],
