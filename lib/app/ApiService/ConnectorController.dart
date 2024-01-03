@@ -65,7 +65,7 @@ class ConnectorController extends GetConnect {
   GETMETHODCALL1({required String api, required Function fun}) async {
     print("<<>>>>>API CALL>>>>>>\n\n\n\n\n\n\n\n\n" + api);
     try {
-      service.Response response = await dio.get(api);
+      service.Response response = await dio.get(api, options: Options(responseType: ResponseType.bytes));
       if (response.statusCode == 200 || response.statusCode == 201) {
         try {
           fun(response.data);

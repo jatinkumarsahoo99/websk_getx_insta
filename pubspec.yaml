@@ -13,6 +13,12 @@ dependencies:
 #  http:
   dio: 4.0.6
   smooth_page_indicator:
+#  gallery_saver:
+#  flutter_file_downloader:
+  image_gallery_saver:
+  path_provider:
+  flutter_spinkit:
+  share_plus:
 
 dev_dependencies: 
   flutter_lints: ^2.0.0

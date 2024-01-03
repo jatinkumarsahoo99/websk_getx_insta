@@ -37,7 +37,7 @@ class BodyData {
   String? description;
   String? altDescription;
   Urls? urls;
-  LinksData? links;
+  Links? links;
   int? likes;
   bool? likedByUser;
   Sponsorship? sponsorship;
@@ -76,7 +76,7 @@ class BodyData {
     altDescription = json['alt_description'];
     urls = json['urls'] != null ? new Urls.fromJson(json['urls']) : null;
     links =
-    json['links'] != null ? new LinksData.fromJson(json['links']) : null;
+    json['links'] != null ? new Links.fromJson(json['links']) : null;
     likes = json['likes'];
     likedByUser = json['liked_by_user'];
     sponsorship = json['sponsorship'] != null
@@ -378,7 +378,7 @@ class Social {
   String? instagramUsername;
   String? portfolioUrl;
   String? twitterUsername;
-  Null? paypalEmail;
+  String? paypalEmail;
 
   Social(
       {this.instagramUsername,
